@@ -35,7 +35,7 @@ def logout():
             Config.AUTHORITY + '/oauth2/v2.0/logout' +
             '?post_logout_redirect_uri=' + url_for('login', _external=True))
         #   And make sure to redirect from there back to the login page
-        pass
+        # pass
 
     return redirect(url_for('login'))
 
